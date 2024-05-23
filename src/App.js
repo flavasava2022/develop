@@ -7,7 +7,9 @@ import { useRef } from "react";
 import Measurements from "./component/Measurements";
 import Graphs from "./component/Graphs";
 import ProjectPref from "./component/ProjectPref";
-import RealtimeGraph from "./component/RealtimeGraph";
+import RealTimeChart from "./component/realTimeGraph";
+
+
 function App() {
   const aboutRef = useRef(null);
   const MeasurementsRef = useRef(null);
@@ -40,10 +42,7 @@ function App() {
       <div ref={MeasurementsRef}>
         <Measurements />
       </div>
-      <div ref={GraphsRef}>
-        <Graphs />
-        {/* <RealtimeGraph/> */}
-      </div>
+      <RealTimeChart />
     </div>
   );
 }
